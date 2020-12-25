@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>ООО "Распил"</title>
+
+  
+  </head>
+  <body style="background: linear-gradient(to top left, #ffffff, #404040);">
+
+    <wrapper class="d-flex flex-column">
+      <div class="d-flex justify-content-lg-between" style="background-image: url(img/wood-tex2.jpg);">
+        <h1 class="p-3 ml-5 " style="white-space: nowrap;font-family: cursive;">ООО "Распил"</h1>
+        <div class="p-3" style="font-size: larger; font-family: cursive;" id="comp-descr">Компания № 1 в России по распространению пиломатерилов
+        </div>
+      </div>
+
+
+      <nav class="navbar navbar-expand-xl navbar-dark sticky-top" style="background-image: url(img/darkwoodjpg.jpg)">
+        <a class="navbar-brand" href="index.html">
+          <img  src="icons/logo-icon.png" alt="logo-icon" style='width: 40px;'>
+          ООО "Распил"
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Главная</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="products.html"><i class="fas fa-book-open"></i>Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="supl-list.html"><i class="fas fa-truck"></i>Поставщики</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-address-book"></i>Контакты</a>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link mr-3" title="Перейти в корзину" href="#"><i class="fas fa-shopping-basket"></i>
+              Корзина
+              </a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-light mt-1">Войти</button>
+                <button class="btn btn-secondary mt-1">Зарегистрироваться</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="flex-fill">
+        <div class="container-fluid py-5 px-0">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">               
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active"><a href="products.html">Каталог</a></li>
+            </div>
+            <div class="col-lg-1"></div>
+            
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2">
+              <nav class="navbar rounded navbar-expand-lg navbar-light flex-column" style="background-color: #e9ecef;" id="collapseSearch">
+                <!-- Brand -->
+                <a class="navbar-brand">Фильтры</a>
+              
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="toggle list">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <form>
+                    <ul class="navbar-nav flex-column">
+                      <li class="nav-item">
+                        <hr/>
+                        <div class="mb-2 text-center" style="font-size: larger;">Виды пиломатериалов</div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" name="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">Вид 1</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2" name="customCheck2">
+                          <label class="custom-control-label" for="customCheck2">Вид 2</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3" name="customCheck3">
+                          <label class="custom-control-label" for="customCheck3">Вид 3</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck4" name="customCheck4">
+                          <label class="custom-control-label" for="customCheck4">Вид 4</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck5" name="customCheck5">
+                          <label class="custom-control-label" for="customCheck5">Вид 5</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck6" name="customCheck6">
+                          <label class="custom-control-label" for="customCheck6">Вид 6</label>
+                        </div>
+                        <hr/>
+                      </li>
+
+                      <li class="nav-item">
+                        <div class="mb-2 text-center" style="font-size: larger;">Поставщики</div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck7" name="customCheck7">
+                          <label class="custom-control-label" for="customCheck7">Поставщик 1</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck8" name="customCheck8">
+                          <label class="custom-control-label" for="customCheck8">Поставщик 2</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck9" name="customCheck9">
+                          <label class="custom-control-label" for="customCheck9">Поставщик 3</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck10" name="customCheck10">
+                          <label class="custom-control-label" for="customCheck10">Поставщик 4</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck11" name="customCheck11">
+                          <label class="custom-control-label" for="customCheck11">Поставщик 5</label>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="custom-control custom-checkbox mb-3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck12" name="customCheck12">
+                          <label class="custom-control-label" for="customCheck12">Поставщик 6</label>
+                        </div>
+                        <hr/>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </nav>
+            </div>
+            <div class="col-lg-8">   
+              <div class="jumbotron py-3">
+                <h2>Каталог</h2>
+                <p>Здесь представлены все пиломатериалы от разных поставщиков</p>
+                <form>
+                  <div class="form-row">
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="searchBar" placeholder="Введите название товара" name="searchBar">
+                    </div>
+                    <div class="col-1">
+                      <button class="btn btn-primary">Поиск</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="container-fluid m-0 p-0">
+                <div class="row no-gutters">
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0 img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+      
+                  <div class="col-6 col-lg-4 col-xl-3">
+                    <div class="card rounded-0 h-100">
+                      <a href="#">
+                        <img class="card-img-top rounded-0  img-fluid" src="img/sample.jpeg" alt="Card image cap">
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center card-title"> 
+                          <a class="no-underl" href="#" style="font-size: 14pt;">Материал</a>
+                          <hr/>
+                        </div>
+                      
+                        <p class="" style="font-size: large;">Описание: <a href="#demo" class="btn p-1  btn-primary" data-toggle="collapse">Показать</a></p>
+                        <div id="demo" class="collapse">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                      <div class="d-flex card-footer justify-content-around mt-auto">
+                          <a class="btn btn-success no-hyph ml-1" title="Добавить в корзину" href="#"><i class="fas fa-cart-arrow-down" style="font-size: x-large;"></i>
+                          </a>
+                          <div class="rounded bg-info ml-1 text-light no-hyph">
+                            <span>399</span>
+                            <span class="ml-1">р/шт.</span>
+                          </div> 
+                      </div>
+                    </div>  
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        </div>
+      </main> 
+      <footer class="text-center">
+        <!-- Copyright -->
+        <div class="text-center p-3 text-light" style="background-image: url(img/darkwoodjpg.jpg);">
+          © 2020 Copyright:
+          <a class="no-underl text-light" href="#">raspil.ru</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </wrapper>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/ reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"   integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</html>

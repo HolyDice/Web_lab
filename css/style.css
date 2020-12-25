@@ -1,0 +1,74 @@
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+@media screen and (max-width: 700px) {
+    #comp-descr {
+      display: none;
+    }
+  }
+
+.carousel-item{
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+a.nav-link{
+  font-size: large;
+}
+
+a.big-link{
+  font-size: 18pt;
+}
+
+a.no-underl:link {
+  text-decoration: none;
+  color: black;
+}
+
+a.no-underl:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a.no-underl:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a.no-underl:active {
+  text-decoration: none;
+  color: black;
+}
+
+.no-hyph{
+  white-space: nowrap;
+}
+
+body, wrapper {
+  min-height:100vh;
+}
+
+@media (max-width: 992px) {
+  #collapseSearch {
+    flex-direction: row !important;
+  }
+
+  #collapsibleNavbar {
+    flex-direction: row !important;
+  }
+}
+
+#collapsibleNavbar ul .active {
+  background-color: blue;
+  color: white;
+  font-size: larger;
+}
+
+#collapsibleNavbar ul a {
+  color:  black;
+  font-size: larger;
+}
